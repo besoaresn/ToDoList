@@ -4,19 +4,19 @@ function addTask() {
   const taskList = document.getElementById('taskList');
 
   if (taskText === '') {
-    alert('Digite uma tarefa!');
-    return;
+      alert('Digite uma tarefa!');
+      return;
   }
 
   if (taskList.children.length >= 5) {
-    alert('Você atingiu o limite máximo de 5 tarefas!');
-    return;
+      alert('Você atingiu o limite máximo de 5 tarefas!');
+      return;
   }
 
   const li = document.createElement('li');
   li.innerHTML = `
-    ${taskText}
-    <button onclick="removeTask(this)">Remover</button>
+      ${taskText}
+      <button onclick="removeTask(this)">Remover</button>
   `;
 
   taskList.appendChild(li);
