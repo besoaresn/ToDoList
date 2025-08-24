@@ -44,8 +44,16 @@ h1 {
     margin-left: 10px;
 }
 
+.task-input .save-btn {
+    background-color: #28a745;
+}
+
 .task-input button:hover {
     background-color: #215188;
+}
+
+.task-input .save-btn:hover {
+    background-color: #1e7e34;
 }
 
 ul {
